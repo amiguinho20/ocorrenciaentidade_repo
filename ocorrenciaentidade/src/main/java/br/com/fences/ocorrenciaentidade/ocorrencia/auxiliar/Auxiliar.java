@@ -1,17 +1,20 @@
 package br.com.fences.ocorrenciaentidade.ocorrencia.auxiliar;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.fences.ocorrenciaentidade.ocorrencia.Ocorrencia;
-
 import com.google.gson.annotations.SerializedName;
+
+import br.com.fences.ocorrenciaentidade.ocorrencia.Ocorrencia;
 
 /**
  * Classe de complemento tecnico. Informacoes auxiliares que nao sao de origem do RDO.
  *
  */
-public class Auxiliar {
+public class Auxiliar implements Serializable{
+
+	private static final long serialVersionUID = 2301350263599819990L;
 
 	public enum EstadoProcessamento { 
 		OK("0"), REPROCESSAR("1"), ERRO("2");
@@ -26,14 +29,14 @@ public class Auxiliar {
 		}
 	} 
 	
-	@SerializedName("GOOGLE_LATITUDE")
-	private String googleLatitude;
+	/**
+	 * Objeto que representa do Ponto no padrao GeoJSON
+	 */
+	@SerializedName("geometry")
+	private Point geometry = new Point();
 	
-	@SerializedName("GOOGLE_LONGITUDE")
-	private String googleLongitude; 
-	
-	@SerializedName("GOOGLE_GEOCODER_STATUS")
-	private String googleGeocoderStatus; 
+	@SerializedName("GEOCODER_STATUS")
+	private String geocoderStatus; 
 	
 	@SerializedName("FLAG_COMPLEMENTAR_DE_NATUREZA_LOCALIZACAO")
 	private String flagComplementarDeNaturezaLocalizacao;
@@ -59,28 +62,12 @@ public class Auxiliar {
 		this.dataProcessamento = dataProcessamento;
 	}
 
-	public String getGoogleLatitude() {
-		return googleLatitude;
+	public String getGeocoderStatus() {
+		return geocoderStatus;
 	}
 
-	public void setGoogleLatitude(String googleLatitude) {
-		this.googleLatitude = googleLatitude;
-	}
-
-	public String getGoogleLongitude() {
-		return googleLongitude;
-	}
-
-	public void setGoogleLongitude(String googleLongitude) {
-		this.googleLongitude = googleLongitude;
-	}
-
-	public String getGoogleGeocoderStatus() {
-		return googleGeocoderStatus;
-	}
-
-	public void setGoogleGeocoderStatus(String googleGeocoderStatus) {
-		this.googleGeocoderStatus = googleGeocoderStatus;
+	public void setGeocoderStatus(String geocoderStatus) {
+		this.geocoderStatus = geocoderStatus;
 	}
 
 	public String getFlagComplementarDeNaturezaLocalizacao() {
@@ -114,6 +101,14 @@ public class Auxiliar {
 
 	public void setEstadoProcessamento(EstadoProcessamento estadoProcessamento) {
 		this.estadoProcessamento = estadoProcessamento;
+	}
+
+	public Point getGeometry() {
+		return geometry;
+	}
+
+	public void setGeometry(Point geometry) {
+		this.geometry = geometry;
 	}
 	
 }
