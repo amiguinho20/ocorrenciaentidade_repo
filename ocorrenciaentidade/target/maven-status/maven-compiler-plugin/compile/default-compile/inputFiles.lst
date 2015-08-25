@@ -12,15 +12,17 @@
 /Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/ocorrencia/pessoa/Pessoa.java
 /Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/ocorrencia/pessoa/Natureza.java
 /Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/ocorrencia/ModusOperandi.java
+/Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/converter/OcorrenciaConverter.java
 /Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/ocorrencia/pessoa/Adorno.java
 /Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/ocorrencia/veiculo/Veiculo.java
 /Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/ocorrencia/pessoa/autor/modusoperandi/CaracteristicaPsicologica.java
 /Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/ocorrencia/pessoa/Toxico.java
+/Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/converter/OcorrenciaJsonAdapter.java
 /Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/chave/OcorrenciaChave.java
 /Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/ocorrencia/pessoa/CartaoCredito.java
 /Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/ocorrencia/Arma.java
-/Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/ocorrencia/veiculo/Seguranca.java
 /Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/ocorrencia/pessoa/LocalFrequenta.java
+/Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/ocorrencia/veiculo/Seguranca.java
 /Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/ocorrencia/natureza/Circunstancia.java
 /Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/ocorrencia/pessoa/Deformidade.java
 /Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/ocorrencia/pessoa/Vestuario.java
@@ -44,3 +46,4 @@
 /Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/ocorrencia/Espolio.java
 /Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/ocorrencia/veiculo/Acesso.java
 /Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/ocorrencia/auxiliar/Point.java
+/Users/Amiguinho/git/ocorrenciaentidade_repo/ocorrenciaentidade/src/main/java/br/com/fences/ocorrenciaentidade/converter/OcorrenciaChaveConverter.java

@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 
-import br.com.fences.ocorrenciaentidade.ocorrencia.pessoa.autor.modusoperandi.Telefone;
+import br.com.fences.ocorrenciaentidade.ocorrencia.pessoa.Telefone;
 import br.com.fences.ocorrenciaentidade.ocorrencia.pessoa.vitima.Vitima;
 
 import com.google.gson.annotations.SerializedName;

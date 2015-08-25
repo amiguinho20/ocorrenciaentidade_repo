@@ -11,7 +11,7 @@ import br.com.fences.ocorrenciaentidade.ocorrencia.veiculo.Veiculo;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Ocorrencia implements Serializable {
+public class Ocorrencia implements Serializable, Comparable<Ocorrencia> {
 	
 	private static final long serialVersionUID = 1L;
 
@@ -333,6 +333,8 @@ public class Ocorrencia implements Serializable {
 	@SerializedName("AUXILIAR")
 	private Auxiliar auxiliar = new Auxiliar();
 
+	
+	
 	public String getIdDelegacia() {
 		return idDelegacia;
 	}
@@ -1179,6 +1181,69 @@ public class Ocorrencia implements Serializable {
 
 	public void setAuxiliar(Auxiliar auxiliar) {
 		this.auxiliar = auxiliar;
+	}
+
+	@Override
+	public String toString() {
+		return "Ocorrencia [id=" + id + ", idDelegacia=" + idDelegacia + ", nomeDelegacia=" + nomeDelegacia + ", anoBo="
+				+ anoBo + ", numBo=" + numBo + ", auxiliar=" + auxiliar + "]";
+	}
+
+	@Override
+	public int compareTo(Ocorrencia o) {
+		int ret = 0;
+		if (getDatahoraRegistroBo() != null)
+		{
+			ret = getDatahoraRegistroBo().compareTo(o.getDatahoraRegistroBo());
+		}
+		else
+		{
+			ret = 0;
+		}
+		return ret;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((anoBo == null) ? 0 : anoBo.hashCode());
+		result = prime * result + ((datahoraRegistroBo == null) ? 0 : datahoraRegistroBo.hashCode());
+		result = prime * result + ((idDelegacia == null) ? 0 : idDelegacia.hashCode());
+		result = prime * result + ((numBo == null) ? 0 : numBo.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Ocorrencia other = (Ocorrencia) obj;
+		if (anoBo == null) {
+			if (other.anoBo != null)
+				return false;
+		} else if (!anoBo.equals(other.anoBo))
+			return false;
+		if (datahoraRegistroBo == null) {
+			if (other.datahoraRegistroBo != null)
+				return false;
+		} else if (!datahoraRegistroBo.equals(other.datahoraRegistroBo))
+			return false;
+		if (idDelegacia == null) {
+			if (other.idDelegacia != null)
+				return false;
+		} else if (!idDelegacia.equals(other.idDelegacia))
+			return false;
+		if (numBo == null) {
+			if (other.numBo != null)
+				return false;
+		} else if (!numBo.equals(other.numBo))
+			return false;
+		return true;
 	}
 
 	

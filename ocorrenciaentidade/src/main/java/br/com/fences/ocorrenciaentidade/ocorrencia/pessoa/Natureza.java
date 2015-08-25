@@ -72,6 +72,9 @@ public class Natureza implements Serializable {
 	@SerializedName("ID_MODALIDADE")
 	private String idModalidade;
 
+	@SerializedName("DESCR_MODALIDADE")
+	private String descrModalidade;
+	
 	@SerializedName("ID_MODALIDADE_PESSOA_NATUREZA")
 	private String idModalidadePessoaNatureza;
 
@@ -253,6 +256,14 @@ public class Natureza implements Serializable {
 
 	public void setIdModalidadePessoaNatureza(String idModalidadePessoaNatureza) {
 		this.idModalidadePessoaNatureza = idModalidadePessoaNatureza;
+	}
+
+	public String getDescrModalidade() {
+		return descrModalidade;
+	}
+
+	public void setDescrModalidade(String descrModalidade) {
+		this.descrModalidade = descrModalidade;
 	}
 
 
