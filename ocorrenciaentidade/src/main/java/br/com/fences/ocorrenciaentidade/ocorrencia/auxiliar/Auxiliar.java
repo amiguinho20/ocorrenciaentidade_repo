@@ -17,19 +17,6 @@ public class Auxiliar implements Serializable{
 
 	private static final long serialVersionUID = 2301350263599819990L;
 
-	public enum EstadoProcessamento { 
-		OK("0"), REPROCESSAR("1"), ERRO("2");
-		
-		private String codigo;
-		
-		EstadoProcessamento(String codigo){
-			this.codigo = codigo;
-		}
-		public String getCodigo(){
-			return codigo;
-		}
-	} 
-	
 	/**
 	 * Objeto que representa do Ponto no padrao GeoJSON
 	 */
@@ -48,12 +35,8 @@ public class Auxiliar implements Serializable{
 	@SerializedName("PAI")
 	private transient Ocorrencia pai; //--ocorrencias complementada (pai)
 	
-	@SerializedName("ESTADO_PROCESSAMENTO")
-	private EstadoProcessamento estadoProcessamento; 
-	
 	@SerializedName("DATA_PROCESSAMENTO")
 	private String dataProcessamento;
-
 	
 	
 	public String getDataProcessamento() {
@@ -95,14 +78,6 @@ public class Auxiliar implements Serializable{
 
 	public void setPai(Ocorrencia pai) {
 		this.pai = pai;
-	}
-
-	public EstadoProcessamento getEstadoProcessamento() {
-		return estadoProcessamento;
-	}
-
-	public void setEstadoProcessamento(EstadoProcessamento estadoProcessamento) {
-		this.estadoProcessamento = estadoProcessamento;
 	}
 
 	public Point getGeometry() {

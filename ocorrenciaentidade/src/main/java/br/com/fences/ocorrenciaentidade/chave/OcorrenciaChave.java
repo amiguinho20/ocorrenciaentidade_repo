@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
-public class OcorrenciaChave implements Serializable {
+public class OcorrenciaChave implements Serializable, Comparable<OcorrenciaChave> {
 
 	private static final long serialVersionUID = -2118289197568700080L;
 
@@ -19,6 +19,9 @@ public class OcorrenciaChave implements Serializable {
 
 	@SerializedName("DATAHORA_REGISTRO_BO")
 	private String datahoraRegistroBo;
+	
+	private String complementar;
+
 
 	public OcorrenciaChave() {
 	}
@@ -78,10 +81,23 @@ public class OcorrenciaChave implements Serializable {
 	}
 
 	@Override
+	public int compareTo(OcorrenciaChave o) {
+		int ret = 0;
+		if (getDatahoraRegistroBo() != null)
+		{
+			ret = getDatahoraRegistroBo().compareTo(o.getDatahoraRegistroBo());
+		}
+		else
+		{
+			ret = 0;
+		}
+		return ret;
+	}
+	
+	@Override
 	public String toString() {
-		return "OcorrenciaChave [idDelegacia=" + idDelegacia + ", anoBo="
-				+ anoBo + ", numBo=" + numBo + ", datahoraRegistroBo="
-				+ datahoraRegistroBo + "]";
+		return "OcorrenciaChave [idDelegacia=" + idDelegacia + ", anoBo=" + anoBo + ", numBo=" + numBo
+				+ ", datahoraRegistroBo=" + datahoraRegistroBo + ", complementar=" + complementar + "]";
 	}
 
 	public String getIdDelegacia() {
@@ -115,5 +131,15 @@ public class OcorrenciaChave implements Serializable {
 	public void setDatahoraRegistroBo(String datahoraRegistroBo) {
 		this.datahoraRegistroBo = datahoraRegistroBo;
 	}
+
+	public String getComplementar() {
+		return complementar;
+	}
+
+	public void setComplementar(String complementar) {
+		this.complementar = complementar;
+	}
+
+
 
 }
