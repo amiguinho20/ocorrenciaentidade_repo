@@ -34,7 +34,7 @@ public class Natureza implements Serializable {
 	@SerializedName("ID_NATUREZA")
 	private String idNatureza;
 	
-	@SerializedName("RUBRICA")
+	@SerializedName("RUBRICA_NATUREZA")
 	private String rubrica;
 
 	@SerializedName("ID_CONDUTA")
