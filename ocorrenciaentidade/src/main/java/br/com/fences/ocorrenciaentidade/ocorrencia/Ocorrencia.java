@@ -30,6 +30,18 @@ public class Ocorrencia implements Serializable, Comparable<Ocorrencia> {
 	@SerializedName("NUM_BO")
 	private String numBo;
 	
+	@SerializedName("ID_SECCIONAL")
+	private String idSeccional;
+	
+	@SerializedName("NOME_SECCIONAL")
+	private String nomeSeccional;
+	
+	@SerializedName("ID_DEPARTAMENTO")
+	private String idDepartamento;
+	
+	@SerializedName("NOME_DEPARTAMENTO")
+	private String nomeDepartamento;
+	
 	@SerializedName("ID_TIPO_BO")
 	private String idTipoBo;
 
@@ -1244,6 +1256,38 @@ public class Ocorrencia implements Serializable, Comparable<Ocorrencia> {
 		} else if (!numBo.equals(other.numBo))
 			return false;
 		return true;
+	}
+
+	public String getIdSeccional() {
+		return idSeccional;
+	}
+
+	public void setIdSeccional(String idSeccional) {
+		this.idSeccional = idSeccional;
+	}
+
+	public String getNomeSeccional() {
+		return nomeSeccional;
+	}
+
+	public void setNomeSeccional(String nomeSeccional) {
+		this.nomeSeccional = nomeSeccional;
+	}
+
+	public String getIdDepartamento() {
+		return idDepartamento;
+	}
+
+	public void setIdDepartamento(String idDepartamento) {
+		this.idDepartamento = idDepartamento;
+	}
+
+	public String getNomeDepartamento() {
+		return nomeDepartamento;
+	}
+
+	public void setNomeDepartamento(String nomeDepartamento) {
+		this.nomeDepartamento = nomeDepartamento;
 	}
 
 	
