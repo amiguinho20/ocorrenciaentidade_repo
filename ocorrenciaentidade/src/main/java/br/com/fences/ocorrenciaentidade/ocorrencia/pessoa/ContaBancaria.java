@@ -4,16 +4,21 @@ import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 public class ContaBancaria  implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 
+	@PesquisaTextual
 	@SerializedName("NOME_BANCO_PESSOA")
 	private String nomeBancoPessoa;
 
+	@PesquisaTextual
 	@SerializedName("NUMERO_AGENCIA_BANCO")
 	private String numeroAgenciaBanco;
 
+	@PesquisaTextual
 	@SerializedName("NUMERO_CONTA")
 	private String numeroConta;
 

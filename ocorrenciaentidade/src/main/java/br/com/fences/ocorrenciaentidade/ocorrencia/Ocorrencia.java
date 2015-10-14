@@ -4,12 +4,13 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import com.google.gson.annotations.SerializedName;
+
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
 import br.com.fences.ocorrenciaentidade.ocorrencia.auxiliar.Auxiliar;
 import br.com.fences.ocorrenciaentidade.ocorrencia.natureza.Natureza;
 import br.com.fences.ocorrenciaentidade.ocorrencia.pessoa.Pessoa;
 import br.com.fences.ocorrenciaentidade.ocorrencia.veiculo.Veiculo;
-
-import com.google.gson.annotations.SerializedName;
 
 public class Ocorrencia implements Serializable, Comparable<Ocorrencia> {
 	
@@ -21,36 +22,43 @@ public class Ocorrencia implements Serializable, Comparable<Ocorrencia> {
 	@SerializedName("ID_DELEGACIA")
 	private String idDelegacia;
 	
+	@PesquisaTextual
 	@SerializedName("NOME_DELEGACIA")
 	private String nomeDelegacia;
 
+	@PesquisaTextual
 	@SerializedName("ANO_BO")
 	private String anoBo;
-	
+
+	@PesquisaTextual
 	@SerializedName("NUM_BO")
 	private String numBo;
 	
 	@SerializedName("ID_SECCIONAL")
 	private String idSeccional;
-	
+
+	@PesquisaTextual
 	@SerializedName("NOME_SECCIONAL")
 	private String nomeSeccional;
-	
+
 	@SerializedName("ID_DEPARTAMENTO")
 	private String idDepartamento;
-	
+
+	@PesquisaTextual
 	@SerializedName("NOME_DEPARTAMENTO")
 	private String nomeDepartamento;
 	
 	@SerializedName("ID_TIPO_BO")
 	private String idTipoBo;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_TIPO_BO")
 	private String descrTipoBo;
 	
 	@SerializedName("ID_CIRCUNSCRICAO")
 	private String idCircunscricao;
-
+	
+	@PesquisaTextual
 	@SerializedName("DESCR_CIRCUNSCRICAO")
 	private String descrCircunscricao;
 
@@ -81,6 +89,7 @@ public class Ocorrencia implements Serializable, Comparable<Ocorrencia> {
 	@SerializedName("HORA_COMUNICACAO_BO")
 	private String horaComunicacaoBo;
 	
+	@PesquisaTextual
 	@SerializedName("DESCR_PERIODO")
 	private String descrPeriodo;
 
@@ -117,45 +126,54 @@ public class Ocorrencia implements Serializable, Comparable<Ocorrencia> {
 	@SerializedName("ID_TIPOLOCAL")
 	private String idTipolocal;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_TIPOLOCAL")
 	private String descrTipolocal;
 
 	@SerializedName("ID_SUBTIPOLOCAL")
 	private String idSubtipolocal;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_SUBTIPOLOCAL")
 	private String descrSubtipolocal;
 
 	@SerializedName("ID_LOGRADOURO")
 	private String idLogradouro;
 	
+	@PesquisaTextual
 	@SerializedName("LOGRADOURO")
 	private String logradouro;
 
 	@SerializedName("NUMERO_LOGRADOURO")
 	private String numeroLogradouro;
 
+	@PesquisaTextual
 	@SerializedName("COMPLEMENTO")
 	private String complemento;
 
+	@PesquisaTextual
 	@SerializedName("BAIRRO")
 	private String bairro;
 
+	@PesquisaTextual
 	@SerializedName("CEP")
 	private String cep;
 
+	@PesquisaTextual
 	@SerializedName("CIDADE")
 	private String cidade;
 
+	@PesquisaTextual
 	@SerializedName("ID_UF")
 	private String idUf;
 
+	@PesquisaTextual
 	@SerializedName("NOME_UF")
 	private String nomeUf;
 	
 	@SerializedName("ID_LOGRADOURO_REFERENCIA")
 	private String idLogradouroReferencia;
-
+	@PesquisaTextual
 	@SerializedName("LOGRADOURO_REFERENCIA")
 	private String logradouroReferencia;
 
@@ -165,18 +183,21 @@ public class Ocorrencia implements Serializable, Comparable<Ocorrencia> {
 	@SerializedName("ID_PROVIDENCIA")
 	private String idProvidencia;
 	
+	@PesquisaTextual
 	@SerializedName("DESCR_PROVIDENCIA")
 	private String descrProvidencia;
 	
 	@SerializedName("ID_EXAME")
 	private String idExame;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_EXAME")
 	private String descrExame;
 	
 	@SerializedName("ID_SOLUCAO")
 	private String idSolucao;
 	
+	@PesquisaTextual
 	@SerializedName("DESCR_SOLUCAO")
 	private String descrSolucao;
 	
@@ -192,9 +213,11 @@ public class Ocorrencia implements Serializable, Comparable<Ocorrencia> {
 	@SerializedName("LUMINOSIDADE")
 	private String luminosidade;
 
+	@PesquisaTextual
 	@SerializedName("NUM_MENSAGEM_BO")
 	private String numMensagemBo;
 	
+	@PesquisaTextual
 	@SerializedName("NUM_OFICIO_BO")
 	private String numOficioBo;
 	
@@ -219,30 +242,37 @@ public class Ocorrencia implements Serializable, Comparable<Ocorrencia> {
 	@SerializedName("FLAG_CERTIFICACAO")
 	private String flagCertificacao;
 	
+	@PesquisaTextual
 	@SerializedName("HISTORICO_BO")
 	private String historicoBo;
 	
 	@SerializedName("DELEG_REFERENCIA_BO")
 	private String delegReferenciaBo;
 	
+	@PesquisaTextual
 	@SerializedName("DELEGACIA_REFERENCIA")
 	private String delegaciaReferencia;
 	
+	@PesquisaTextual
 	@SerializedName("ANO_REFERENCIA_BO")
 	private String anoReferenciaBo;
 	
+	@PesquisaTextual
 	@SerializedName("NUM_REFERENCIA_BO")
 	private String numReferenciaBo;
 	
 	@SerializedName("DELEG_ORIGEM_BO")
 	private String delegOrigemBo;
 	
+	@PesquisaTextual
 	@SerializedName("DELEGACIA_ORIGEM")
 	private String delegaciaOrigem;
 	
+	@PesquisaTextual
 	@SerializedName("ANO_ORIGEM_BO")
 	private String anoOrigemBo;
 	
+	@PesquisaTextual
 	@SerializedName("NUM_ORIGEM_BO")
 	private String numOrigemBo;
 	
@@ -291,6 +321,7 @@ public class Ocorrencia implements Serializable, Comparable<Ocorrencia> {
 	@SerializedName("NUM_OFFLINE")
 	private String numOffline;
 	
+	@PesquisaTextual
 	@SerializedName("MOTIVO_TRANSFERENCIA")
 	private String motivoTransferencia;
 	
@@ -306,6 +337,7 @@ public class Ocorrencia implements Serializable, Comparable<Ocorrencia> {
 	@SerializedName("ID_LOGRADOURO_GEO")
 	private String idLogradouroGeo;
 	
+	@PesquisaTextual
 	@SerializedName("HISTORICO_RESUMIDO")
 	private String historicoResumido;
 	

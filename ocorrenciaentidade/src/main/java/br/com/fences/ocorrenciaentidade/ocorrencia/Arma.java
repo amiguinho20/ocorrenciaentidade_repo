@@ -3,6 +3,7 @@ package br.com.fences.ocorrenciaentidade.ocorrencia;
 import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
 
 public class Arma implements Serializable {
 	
@@ -17,12 +18,15 @@ public class Arma implements Serializable {
 	@SerializedName("CONT_PESSOA_ARMA")
 	private String contPessoaArma;
 
+	@PesquisaTextual
 	@SerializedName("NOME_PESSOA")
 	private String nomePessoa;
 
+	@PesquisaTextual
 	@SerializedName("NOME_PESSOA_ARMA")
 	private String nomePessoaArma;
 
+	@PesquisaTextual
 	@SerializedName("PROPRIETARIO_ARMA")
 	private String proprietarioArma;
 
@@ -32,27 +36,34 @@ public class Arma implements Serializable {
 	@SerializedName("ID_MODO_OBJETO_ARMA")
 	private String idModoObjetoArma;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_MODO_OBJETO")
 	private String descrModoObjeto;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_MODO_OBJETO_ARMA")
 	private String descrModoObjetoArma;
 
+	@PesquisaTextual
 	@SerializedName("NUMERO_ARMA")
 	private String numeroArma;
 
 	@SerializedName("ID_TIPO_ARMA_FOGO")
 	private String idTipoArmaFogo;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_ARMA_FOGO")
 	private String descrArmaFogo;
 
+	@PesquisaTextual
 	@SerializedName("MARCA_ARMA")
 	private String marcaArma;
 
+	@PesquisaTextual
 	@SerializedName("CALIBRE_ARMA")
 	private String calibreArma;
 
+	@PesquisaTextual
 	@SerializedName("USO_ARMA")
 	private String usoArma;
 

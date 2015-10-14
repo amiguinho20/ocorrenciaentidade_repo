@@ -6,6 +6,8 @@ import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 public class Ferimento  implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -13,6 +15,7 @@ public class Ferimento  implements Serializable {
 	@SerializedName("ID_FERIMENTO")
 	private String idFerimento;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_FERIMENTO")
 	private String descrFerimento;
 
@@ -22,9 +25,11 @@ public class Ferimento  implements Serializable {
 	@SerializedName("ID_INSTRUMENTO_FERIMENTO")
 	private String idInstrumentoFerimento;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_INSTRUMENTO")
 	private String descrInstrumento;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_INSTRUMENTO_FERIMENTO")
 	private String descrInstrumentoFerimento;
 

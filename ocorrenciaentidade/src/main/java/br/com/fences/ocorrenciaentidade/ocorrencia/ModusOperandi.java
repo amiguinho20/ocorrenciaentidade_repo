@@ -5,6 +5,8 @@ import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 public class ModusOperandi  implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -12,12 +14,14 @@ public class ModusOperandi  implements Serializable {
 	@SerializedName("ID_LOCAL_ACESSO")
 	private String idLocalAcesso;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_LOCAL_ACESSO")
 	private String descrLocalAcesso;
 
 	@SerializedName("ID_QUALIFICACAO_ACESSO")
 	private String idQualificacaoAcesso;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_QUALIFICACAO_ACESSO")
 	private String descrQualificacaoAcesso;
 

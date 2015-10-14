@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 public class Carga  implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -11,9 +13,11 @@ public class Carga  implements Serializable {
 	@SerializedName("ID_TIPO_CARGA")
 	private String idTipoCarga;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_TIPO_CARGA")
 	private String descrTipoCarga;
 
+	@PesquisaTextual
 	@SerializedName("DETALHE_CARGA")
 	private String detalheCarga;
 
@@ -23,9 +27,11 @@ public class Carga  implements Serializable {
 	@SerializedName("ID_MODO_OBJETO_CARGA")
 	private String idModoObjetoCarga;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_MODO_OBJETO")
 	private String descrModoObjeto;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_MODO_OBJETO_CARGA")
 	private String descrModoObjetoCarga;
 
@@ -35,36 +41,46 @@ public class Carga  implements Serializable {
 	@SerializedName("ID_UNIDADE_CARGA")
 	private String idUnidadeCarga;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_UNIDADE")
 	private String descrUnidade;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_UNIDADE_CARGA")
 	private String descrUnidadeCarga;
 
+	@PesquisaTextual
 	@SerializedName("DESTINO_CARGA")
 	private String destinoCarga;
 
+	@PesquisaTextual
 	@SerializedName("NOTAS_FISCAIS_CARGA")
 	private String notasFiscaisCarga;
 
+	@PesquisaTextual
 	@SerializedName("LOCAL_EMBARQUE_CARGA")
 	private String localEmbarqueCarga;
-
+	
+	@PesquisaTextual
 	@SerializedName("NOME_EMBARCADOR_CARGA")
 	private String nomeEmbarcadorCarga;
 
 	@SerializedName("FLAG_SEGURO_CARGA")
 	private String flagSeguroCarga;
 
+	@PesquisaTextual
 	@SerializedName("ORIGEM_CARGA")
 	private String origemCarga;
 
+	@PesquisaTextual
 	@SerializedName("VALOR_CARGA")
 	private String valorCarga;
 
+	@PesquisaTextual
 	@SerializedName("SERIE_CARGA")
 	private String serieCarga;
 
+	@PesquisaTextual
 	@SerializedName("MARCA_CARGA")
 	private String marcaCarga;
 
@@ -80,6 +96,7 @@ public class Carga  implements Serializable {
 	@SerializedName("VALOR_ESTIMADO_RECUP_CARGA")
 	private String valorEstimadoRecupCarga;
 
+	@PesquisaTextual
 	@SerializedName("LOCAL_RECUPERACAO_CARGA")
 	private String localRecuperacaoCarga;
 

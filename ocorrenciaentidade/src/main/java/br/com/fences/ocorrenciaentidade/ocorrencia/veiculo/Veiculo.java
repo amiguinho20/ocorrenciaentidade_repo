@@ -6,6 +6,8 @@ import java.util.Collection;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 public class Veiculo implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -13,75 +15,91 @@ public class Veiculo implements Serializable {
 	@SerializedName("CONT_VEICULO")
 	private String contVeiculo;
 
+	@PesquisaTextual
 	@SerializedName("PLACA_VEICULO")
 	private String placaVeiculo;
 
+	@PesquisaTextual
 	@SerializedName("ANO_FABRICACAO")
 	private String anoFabricacao;
 
+	@PesquisaTextual
 	@SerializedName("ANO_MODELO")
 	private String anoModelo;
 
 	@SerializedName("ID_TIPO_VEICULO")
 	private String idTipoVeiculo;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_TIPO_VEICULO")
 	private String descrTipoVeiculo;
 
 	@SerializedName("ID_COMBUSTIVEL")
 	private String idCombustivel;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_COMBUSTIVEL")
 	private String descrCombustivel;
 
 	@SerializedName("ID_COR_VEICULO")
 	private String idCorVeiculo;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_COR_VEICULO")
 	private String descrCorVeiculo;
 
 	@SerializedName("ID_MARCA_VEICULO")
 	private String idMarcaVeiculo;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_MARCA_VEICULO")
 	private String descrMarcaVeiculo;
 
+	@PesquisaTextual
 	@SerializedName("CIDADE_VEICULO")
 	private String cidadeVeiculo;
 
 	@SerializedName("UF_VEICULO")
 	private String ufVeiculo;
 
+	@PesquisaTextual
 	@SerializedName("COD_RENAVAM")
 	private String codRenavam;
 
+	@PesquisaTextual
 	@SerializedName("CHASSIS_VEICULO")
 	private String chassisVeiculo;
 
+	@PesquisaTextual
 	@SerializedName("NOME_PROPRIETARIO_VEICULO")
 	private String nomeProprietarioVeiculo;
 
 	@SerializedName("ID_OCORRENCIA_VEICULO")
 	private String idOcorrenciaVeiculo;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_OCORRENCIA_VEICULO")
 	private String descrOcorrenciaVeiculo;
 
 	@SerializedName("ID_TIPOLOCAL")
 	private String idTipolocal;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_TIPOLOCAL")
 	private String descrTipolocal;
 
 	@SerializedName("FLAG_SEGURO_VEICULO")
 	private String flagSeguroVeiculo;
 
+	@PesquisaTextual
 	@SerializedName("SEGURADORA_VEICULO")
 	private String seguradoraVeiculo;
 
+	@PesquisaTextual
 	@SerializedName("APOLICE_VEICULO")
 	private String apoliceVeiculo;
 
+	@PesquisaTextual
 	@SerializedName("LOGOTIPO_VEICULO")
 	private String logotipoVeiculo;
 
@@ -91,9 +109,11 @@ public class Veiculo implements Serializable {
 	@SerializedName("TEMPO_ABANDONO_VEICULO")
 	private String tempoAbandonoVeiculo;
 
+	@PesquisaTextual
 	@SerializedName("DOCUMENTOS_LEVADOS")
 	private String documentosLevados;
 
+	@PesquisaTextual
 	@SerializedName("CHASSIS_REMARCADO")
 	private String chassisRemarcado;
 

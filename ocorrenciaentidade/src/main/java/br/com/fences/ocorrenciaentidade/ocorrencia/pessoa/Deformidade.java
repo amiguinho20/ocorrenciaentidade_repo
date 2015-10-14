@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 public class Deformidade implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -11,12 +13,14 @@ public class Deformidade implements Serializable {
 	@SerializedName("ID_TIPO_DEFORMIDADE")
 	private String idTipoDeformidade;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_TIPO_DEFORMIDADE")
 	private String descrTipoDeformidade;
 
 	@SerializedName("ID_LOCAL_CORPO")
 	private String idLocalCorpo;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_LOCAL_CORPO")
 	private String descrLocalCorpo;
 

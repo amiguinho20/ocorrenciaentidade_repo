@@ -6,6 +6,8 @@ import java.util.Collection;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 public class Natureza implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -16,30 +18,35 @@ public class Natureza implements Serializable {
 	@SerializedName("ID_OCORRENCIA")
 	private String idOcorrencia;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_OCORRENCIA")
 	private String descrOcorrencia;
 
 	@SerializedName("ID_ESPECIE")
 	private String idEspecie;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_ESPECIE")
 	private String descrEspecie;
 	
 	@SerializedName("ID_SUBESPECIE")
 	private String idSubespecie;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_SUBESPECIE")
 	private String descrSubespecie;
 	
 	@SerializedName("ID_NATUREZA")
 	private String idNatureza;
 	
+	@PesquisaTextual
 	@SerializedName("RUBRICA_NATUREZA")
 	private String rubrica;
 
 	@SerializedName("ID_CONDUTA")
 	private String idConduta;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_CONDUTA")
 	private String descrConduta;
 

@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 public class Entorpecente  implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -17,9 +19,11 @@ public class Entorpecente  implements Serializable {
 	@SerializedName("ID_TOXICO_ENTORPECENTE")
 	private String idToxicoEntorpecente;
 	
+	@PesquisaTextual
 	@SerializedName("DESCR_TOXICO")
 	private String descrToxico;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_TOXICO_ENTORPECENTE")
 	private String descrToxicoEntorpecente;
 
@@ -29,9 +33,11 @@ public class Entorpecente  implements Serializable {
 	@SerializedName("ID_UNIDADE_ENTORPECENTE")
 	private String idUnidadeEntorpecente;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_UNIDADE")
 	private String descrUnidade;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_UNIDADE_ENTORPECENTE")
 	private String descrUnidadeEntorpecente;
 
@@ -41,6 +47,7 @@ public class Entorpecente  implements Serializable {
 	@SerializedName("ID_ACONDICIONAMENTO")
 	private String idAcondicionamento;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_ACONDICIONAMENTO")
 	private String descrAcondicionamento;
 
@@ -50,27 +57,34 @@ public class Entorpecente  implements Serializable {
 	@SerializedName("ID_INVOLUCRO")
 	private String idInvolucro;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_INVOLUCRO")
 	private String descrInvolucro;
 
+	@PesquisaTextual
 	@SerializedName("NUM_LAUDO_IML")
 	private String numLaudoIml;
 
 	@SerializedName("ANO_LAUDO_IML")
 	private String anoLaudoIml;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_IML")
 	private String descrIml;
 
+	@PesquisaTextual
 	@SerializedName("NOME_PERITO_IML")
 	private String nomePeritoIml;
 
+	@PesquisaTextual
 	@SerializedName("OBS_IML")
 	private String obsIml;
 
+	@PesquisaTextual
 	@SerializedName("OBSERVACOES")
 	private String observacoes;
 
+	@PesquisaTextual
 	@SerializedName("OBSERVACOES_ENTORPECENTE")
 	private String observacoesEntorpecente;
 

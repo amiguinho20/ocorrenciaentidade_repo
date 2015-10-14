@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 
 public class Acesso implements Serializable {
 	
@@ -18,6 +20,7 @@ public class Acesso implements Serializable {
 	@SerializedName("ID_VEICULO_ACESSO")
 	private String idVeiculoAcesso;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_VEICULO_ACESSO")
 	private String descrVeiculoAcesso;
 

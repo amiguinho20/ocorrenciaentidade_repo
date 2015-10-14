@@ -6,6 +6,8 @@ import java.util.Collection;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 public class Vitima implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -25,6 +27,7 @@ public class Vitima implements Serializable {
 	@SerializedName("ID_RELIGIAO")
 	private String idReligiao;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_RELIGIAO")
 	private String descrReligiao;
 
@@ -34,15 +37,18 @@ public class Vitima implements Serializable {
 	@SerializedName("FLAG_INTERNADO_VITIMA")
 	private String flagInternadoVitima;
 
+	@PesquisaTextual
 	@SerializedName("LOCAL_INTERNACAO_VITIMA")
 	private String localInternacaoVitima;
 
 	@SerializedName("FLAG_TRANSPORTADA_VITIMA")
 	private String flagTransportadaVitima;
 	
+	@PesquisaTextual
 	@SerializedName("LOCAL_CATIVEIRO_VITIMA")
 	private String localCativeiroVitima;
 
+	@PesquisaTextual
 	@SerializedName("LOCAL_ABANDONO_VITIMA")
 	private String localAbandonoVitima;
 
@@ -61,6 +67,7 @@ public class Vitima implements Serializable {
 	@SerializedName("FLAG_SEGURO_VIDA_VITIMA")
 	private String flagSeguroVidaVitima;
 
+	@PesquisaTextual
 	@SerializedName("BENEFICIARIOS_VITIMA")
 	private String beneficiariosVitima;
 
@@ -70,6 +77,7 @@ public class Vitima implements Serializable {
 	@SerializedName("ID_POSICAO_CADAVER")
 	private String idPosicaoCadaver;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_POSICAO_CADAVER")
 	private String descrPosicaoCadaver;
 
@@ -85,6 +93,7 @@ public class Vitima implements Serializable {
 	@SerializedName("FLAG_VITIMA_ANTES_VITIMA_CARGA")
 	private String flagVitimaAntesVitimaCarga;
 
+	@PesquisaTextual
 	@SerializedName("CIRCUNSC_ANTES_VITIMA_CARG")
 	private String circunscAntesVitimaCarg;
 
@@ -97,9 +106,11 @@ public class Vitima implements Serializable {
 	@SerializedName("ID_TIPO_CARGA_ANTES")
 	private String idTipoCargaAntes;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_TIPO")
 	private String descrTipo;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_TIPO_CARGA_VITIMA")
 	private String descrTipoCargaVitima;
 	

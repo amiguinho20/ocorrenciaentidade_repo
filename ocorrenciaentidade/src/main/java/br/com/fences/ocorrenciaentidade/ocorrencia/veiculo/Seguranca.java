@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 public class Seguranca implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -17,6 +19,7 @@ public class Seguranca implements Serializable {
 	@SerializedName("ID_VEICULO_SEGURANCA")
 	private String idVeiculoSeguranca;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_VEICULO_SEGURANCA")
 	private String descrVeiculoSeguranca;
 

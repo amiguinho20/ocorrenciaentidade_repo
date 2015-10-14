@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
 import br.com.fences.ocorrenciaentidade.ocorrencia.pessoa.autor.Linguagem;
 import br.com.fences.ocorrenciaentidade.ocorrencia.pessoa.autor.modusoperandi.ModusOperandi;
 
@@ -20,9 +21,11 @@ public class Autor implements Serializable {
 	@SerializedName("ID_RELIGIAO_AUTOR")
 	private String idReligiaoAutor;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_RELIGIAO")
 	private String descrReligiao;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_RELIGIAO_AUTOR")
 	private String descrReligiaoAutor;
 
@@ -35,15 +38,18 @@ public class Autor implements Serializable {
 	@SerializedName("TIPO_SANGUINEO_AUTOR")
 	private String tipoSanguineoAutor;
 
+	@PesquisaTextual
 	@SerializedName("RELACIONAMENTO_FAMILIA_AUTOR")
 	private String relacionamentoFamiliaAutor;
 	
+	@PesquisaTextual
 	@SerializedName("MOTIVO_PRISAO_ANTERIOR_AUTOR")
 	private String motivoPrisaoAnteriorAutor;
 
 	@SerializedName("FLAG_ANTECEDENTE_CRIM_AUTOR")
 	private String flagAntecedenteCrimAutor;
 
+	@PesquisaTextual
 	@SerializedName("PARENTESCO_VITIMA_AUTOR")
 	private String parentescoVitimaAutor;
 	

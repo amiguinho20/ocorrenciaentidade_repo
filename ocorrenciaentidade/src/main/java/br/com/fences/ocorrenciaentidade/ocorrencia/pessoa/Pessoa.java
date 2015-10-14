@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
 import br.com.fences.ocorrenciaentidade.ocorrencia.pessoa.Telefone;
 import br.com.fences.ocorrenciaentidade.ocorrencia.pessoa.vitima.Vitima;
 
@@ -16,24 +17,30 @@ public class Pessoa implements Serializable {
 	@SerializedName("ID_TIPO_PESSOA")
 	private String idTipoPessoa;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_TIPO_PESSOA")
 	private String descrTipoPessoa;
 
 	@SerializedName("ID_ESTADO_CIVIL")
 	private String idEstadoCivil;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_ESTADO_CIVIL")
 	private String descrEstadoCivil;
 
+	@PesquisaTextual
 	@SerializedName("NOME_PESSOA")
 	private String nomePessoa;
 
+	@PesquisaTextual
 	@SerializedName("VULGO_PESSOA")
 	private String vulgoPessoa;
 
+	@PesquisaTextual
 	@SerializedName("NOMEPAI_PESSOA")
 	private String nomepaiPessoa;
 
+	@PesquisaTextual
 	@SerializedName("NOMEMAE_PESSOA")
 	private String nomemaePessoa;
 
@@ -46,24 +53,30 @@ public class Pessoa implements Serializable {
 	@SerializedName("SEXO_PESSOA")
 	private String sexoPessoa;
 
+	@PesquisaTextual
 	@SerializedName("RG")
 	private String rg;
 
+	@PesquisaTextual
 	@SerializedName("RG_UF")
 	private String rgUf;
 
+	@PesquisaTextual
 	@SerializedName("UF_RG")
 	private String ufRg;
 
 	@SerializedName("RG_DATA_EMISSAO")
 	private String rgDataEmissao;
 
+	@PesquisaTextual
 	@SerializedName("CPF")
 	private String cpf;
 
+	@PesquisaTextual
 	@SerializedName("CNH")
 	private String cnh;
 
+	@PesquisaTextual
 	@SerializedName("NR_TIT_ELEITOR")
 	private String nrTitEleitor;
 
@@ -73,6 +86,7 @@ public class Pessoa implements Serializable {
 	@SerializedName("SECAO_TIT_ELEITOR")
 	private String secaoTitEleitor;
 
+	@PesquisaTextual
 	@SerializedName("NR_CART_PROF")
 	private String nrCartProf;
 
@@ -85,27 +99,33 @@ public class Pessoa implements Serializable {
 	@SerializedName("UF_CART")
 	private String ufCart;
 
+	@PesquisaTextual
 	@SerializedName("OUTROS_DOCUMENTOS")
 	private String outrosDocumentos;
 
+	@PesquisaTextual
 	@SerializedName("NACIONALIDADE_PESSOA")
 	private String nacionalidadePessoa;
 
+	@PesquisaTextual
 	@SerializedName("NATURALIDADE_PESSOA")
 	private String naturalidadePessoa;
 
+	@PesquisaTextual
 	@SerializedName("EMAIL_PESSOA")
 	private String emailPessoa;
 
 	@SerializedName("ID_PROFISSAO")
 	private String idProfissao;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_PROFISSAO")
 	private String descrProfissao;
 
 	@SerializedName("ID_GRAU_INSTRUCAO")
 	private String idGrauInstrucao;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_GRAU_INSTRUCAO")
 	private String descrGrauInstrucao;
 
@@ -130,42 +150,51 @@ public class Pessoa implements Serializable {
 	@SerializedName("FLAG_ORIGEM_DADOS")
 	private String flagOrigemDados;
 
+	@PesquisaTextual
 	@SerializedName("PESO_CARACTERISTICA")
 	private String pesoCaracteristica;
 
+	@PesquisaTextual
 	@SerializedName("ALTURA_CARACTERISTICA")
 	private String alturaCaracteristica;
 
+	@PesquisaTextual
 	@SerializedName("COMPLEICAO_CARACTERISTICA")
 	private String compleicaoCaracteristica;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_TIPO_CABELO")
 	private String descrTipoCabelo;
 
 	@SerializedName("ID_TIPO_CABELO")
 	private String idTipoCabelo;
 
+	@PesquisaTextual
 	@SerializedName("COMPRIMENTO_CABELO_CARACT")
 	private String comprimentoCabeloCaract;
 
 	@SerializedName("ID_COR_CABELO")
 	private String idCorCabelo;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_COR_CABELO")
 	private String descrCorCabelo;
 
 	@SerializedName("ID_COR_OLHO")
 	private String idCorOlho;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_COR_OLHO")
 	private String descrCorOlho;
 
 	@SerializedName("ID_COR_CUTIS")
 	private String idCorCutis;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_COR_CUTIS")
 	private String descrCorCutis;
 
+	@PesquisaTextual
 	@SerializedName("OBSERVACOES")
 	private String observacoes;
 	

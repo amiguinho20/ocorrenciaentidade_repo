@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 
 public class Adorno implements Serializable {
 	
@@ -12,15 +14,18 @@ public class Adorno implements Serializable {
 	@SerializedName("ID_TIPO_ADORNO")
 	private String idTipoAdorno;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_TIPO_ADORNO")
 	private String descrTipoAdorno;
 
 	@SerializedName("ID_LOCAL_CORPO")
 	private String idLocalCorpo;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_LOCAL_CORPO")
 	private String descrLocalCorpo;
 
+	@PesquisaTextual
 	@SerializedName("CARACTERISTICA_ADORNO")
 	private String caracteristicaAdorno;
 

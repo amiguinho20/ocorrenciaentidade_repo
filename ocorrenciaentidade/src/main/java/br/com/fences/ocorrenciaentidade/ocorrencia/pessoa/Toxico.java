@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 
 public class Toxico implements Serializable {
 	
@@ -12,6 +14,7 @@ public class Toxico implements Serializable {
 	@SerializedName("ID_TOXICO")
 	private String idToxico;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_TOXICO")
 	private String descrToxico;
 

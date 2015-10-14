@@ -7,6 +7,8 @@ import java.util.Collection;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 public class ModusOperandi implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -32,12 +34,15 @@ public class ModusOperandi implements Serializable {
 	@SerializedName("FLAG_LAZER_TRABALHO_AUTOR")
 	private String flagLazerTrabalhoAutor;
 
+	@PesquisaTextual
 	@SerializedName("PLACA_VEICULO")
 	private String placaVeiculo;
 
+	@PesquisaTextual
 	@SerializedName("PLACA_VEICULO_MODUS_OPERANDI_AUTOR")
 	private String placaVeiculoModusOperandiAutor;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_ITINERARIO_AUTOR")
 	private String descrItinerarioAutor;
 

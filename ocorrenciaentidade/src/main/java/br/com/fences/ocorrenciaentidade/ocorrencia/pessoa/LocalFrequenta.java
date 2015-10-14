@@ -5,6 +5,8 @@ import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 public class LocalFrequenta implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -12,6 +14,7 @@ public class LocalFrequenta implements Serializable {
 	@SerializedName("NOME_LOC_FREQ")
 	private String nomeLocFreq;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_TIPO_LOCAL")
 	private String descrTipoLocal;
 
@@ -21,33 +24,42 @@ public class LocalFrequenta implements Serializable {
 	@SerializedName("ID_TIPO_LOCAL")
 	private String idTipoLocal;
 
+	@PesquisaTextual
 	@SerializedName("LOGRADOURO_LOC_FREQ")
 	private String logradouroLocFreq;
 
 	@SerializedName("NUMERO_LOGRADOURO_LOC_FREQ")
 	private String numeroLogradouroLocFreq;
 
+	@PesquisaTextual
 	@SerializedName("COMPLEMENTO_LOC_FREQ")
 	private String complementoLocFreq;
 
+	@PesquisaTextual
 	@SerializedName("CEP_LOC_FREQ")
 	private String cepLocFreq;
 
+	@PesquisaTextual
 	@SerializedName("BAIRRO_LOC_FREQ")
 	private String bairroLocFreq;
 
+	@PesquisaTextual
 	@SerializedName("CIDADE_LOC_FREQ")
 	private String cidadeLocFreq;
 
+	@PesquisaTextual
 	@SerializedName("ID_UF")
 	private String idUf;
 
+	@PesquisaTextual
 	@SerializedName("ID_UF_LOCAL_FREQUENTA")
 	private String idUfLocalFrequenta;
 
+	@PesquisaTextual
 	@SerializedName("NOME_UF")
 	private String nomeUf;
 
+	@PesquisaTextual
 	@SerializedName("NOME_UF_LOCAL_FREQUENTA")
 	private String nomeUfLocalFrequenta;
 

@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 
 public class Natureza implements Serializable {
 	
@@ -15,9 +17,11 @@ public class Natureza implements Serializable {
 	@SerializedName("ID_OCORRENCIA_PESSOA_NATUREZA")
 	private String idOcorrenciaPessoaNatureza;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_OCORRENCIA")
 	private String descrOcorrencia;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_OCORRENCIA_PESSOA_NATUREZA")
 	private String descrOcorrenciaPessoaNatureza;
 
@@ -27,9 +31,11 @@ public class Natureza implements Serializable {
 	@SerializedName("ID_ESPECIE_PESSOA_NATUREZA")
 	private String idEspeciePessoaNatureza;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_ESPECIE")
 	private String descrEspecie;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_ESPECIE_PESSOA_NATUREZA")
 	private String descrEspeciePessoaNatureza;
 
@@ -39,9 +45,11 @@ public class Natureza implements Serializable {
 	@SerializedName("ID_SUBESPECIE_PESSOA_NATUREZA")
 	private String idSubespeciePessoaNatureza;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_SUBESPECIE")
 	private String descrSubespecie;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_SUBESPECIE_PESSOA_NATUREZA")
 	private String descrSubespeciePessoaNatureza;
 
@@ -51,9 +59,11 @@ public class Natureza implements Serializable {
 	@SerializedName("ID_NATUREZA_PESSOA_NATUREZA")
 	private String idNaturezaPessoaNatureza;
 
+	@PesquisaTextual
 	@SerializedName("RUBRICA")
 	private String rubrica;
 
+	@PesquisaTextual
 	@SerializedName("RUBRICA_PESSOA_NATUREZA")
 	private String rubricaPessoaNatureza;
 
@@ -63,15 +73,18 @@ public class Natureza implements Serializable {
 	@SerializedName("ID_DESDOBRAMENTO_PESSOA_NATUREZA")
 	private String idDesdobramentoPessoaNatureza;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_DESDOBRAMENTO")
 	private String descrDesdobramento;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_DESDOBRAMENTO_PESSOA_NATUREZA")
 	private String descrDesdobramentoPessoaNatureza;
 
 	@SerializedName("ID_MODALIDADE")
 	private String idModalidade;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_MODALIDADE")
 	private String descrModalidade;
 	

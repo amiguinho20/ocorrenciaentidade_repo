@@ -5,19 +5,25 @@ import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 public class Telefone implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
+	@PesquisaTextual
 	@SerializedName("DDD_TELEFONE")
 	private String dddTelefone;
 
+	@PesquisaTextual
 	@SerializedName("DDD_TELEFONE_MODUS_OPERANDI_AUTOR_TELEFONE")
 	private String dddTelefoneModusOperandiAutorTelefone;
 
+	@PesquisaTextual
 	@SerializedName("NUMERO_TELEFONE")
 	private String numeroTelefone;
 
+	@PesquisaTextual
 	@SerializedName("NUMERO_TELEFONE_MODUS_OPERANDI_AUTOR_TELEFONE")
 	private String numeroTelefoneModusOperandiAutorTelefone;
 
@@ -36,6 +42,7 @@ public class Telefone implements Serializable {
 	@SerializedName("ID_RUIDO_TELEFONE")
 	private String idRuidoTelefone;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_RUIDO_TELEFONE")
 	private String descrRuidoTelefone;
 

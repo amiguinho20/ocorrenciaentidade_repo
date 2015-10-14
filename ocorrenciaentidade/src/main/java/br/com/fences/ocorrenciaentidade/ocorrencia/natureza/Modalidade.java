@@ -5,6 +5,8 @@ import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 
 public class Modalidade implements Serializable {
 	
@@ -13,6 +15,7 @@ public class Modalidade implements Serializable {
 	@SerializedName("ID_MODALIDADE")
 	private String idModalidade;
 
+	@PesquisaTextual
 	@SerializedName("RUBRICA")
 	private String rubrica;
 

@@ -5,6 +5,8 @@ import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 public class CaracteristicaPsicologica  implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -12,6 +14,7 @@ public class CaracteristicaPsicologica  implements Serializable {
 	@SerializedName("ID_CARACTERISTICA_PSICOLOGICA")
 	private String idCaracteristicaPsicologica;
 
+	@PesquisaTextual
 	@SerializedName("DECR_CARAC_PSICO")
 	private String decrCaracPsico;
 

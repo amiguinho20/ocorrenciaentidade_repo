@@ -7,6 +7,8 @@ import java.util.Collection;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 
 public class Desdobramento implements Serializable {
 	
@@ -15,6 +17,7 @@ public class Desdobramento implements Serializable {
 	@SerializedName("ID_DESDOBRAMENTO")
 	private String idDesdobramento;
 	
+	@PesquisaTextual
 	@SerializedName("DESCR_DESDOBRAMENTO")
 	private String descrDesdobramento;
 	

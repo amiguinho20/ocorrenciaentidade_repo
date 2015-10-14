@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 public class Empresa  implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -14,21 +16,27 @@ public class Empresa  implements Serializable {
 	@SerializedName("ID_TIPO_EMPRESA")
 	private String idTipoEmpresa;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_TIPO_EMPRESA")
 	private String descrTipoEmpresa;
 
+	@PesquisaTextual
 	@SerializedName("CGC_EMPRESA")
 	private String cgcEmpresa;
 
+	@PesquisaTextual
 	@SerializedName("INSCRICAO_MUNICIPAL_EMPRESA")
 	private String inscricaoMunicipalEmpresa;
 
+	@PesquisaTextual
 	@SerializedName("INSCRICAO_ESTADUAL_EMPRESA")
 	private String inscricaoEstadualEmpresa;
 
+	@PesquisaTextual
 	@SerializedName("RAZAO_SOCIAL_EMPRESA")
 	private String razaoSocialEmpresa;
 
+	@PesquisaTextual
 	@SerializedName("NOME_FANTASIA_EMPRESA")
 	private String nomeFantasiaEmpresa;
 
@@ -38,24 +46,31 @@ public class Empresa  implements Serializable {
 	@SerializedName("CONT_PESSOA_EMPRESA")
 	private String contPessoaEmpresa;
 
+	@PesquisaTextual
 	@SerializedName("NOME_PESSOA")
 	private String nomePessoa;
 
+	@PesquisaTextual
 	@SerializedName("NOME_PESSOA_EMPRESA")
 	private String nomePessoaEmpresa;
 
+	@PesquisaTextual
 	@SerializedName("CARGO_REPRESENTANTE")
 	private String cargoRepresentante;
 
+	@PesquisaTextual
 	@SerializedName("DDD_TELEFONE_EMPRESA")
 	private String dddTelefoneEmpresa;
 
+	@PesquisaTextual
 	@SerializedName("TELEFONE_EMPRESA")
 	private String telefoneEmpresa;
 
+	@PesquisaTextual
 	@SerializedName("LOGRADOURO")
 	private String logradouro;
 
+	@PesquisaTextual
 	@SerializedName("LOGRADOURO_EMPRESA")
 	private String logradouroEmpresa;
 
@@ -65,39 +80,51 @@ public class Empresa  implements Serializable {
 	@SerializedName("NUMERO_LOGRADOURO_EMPRESA")
 	private String numeroLogradouroEmpresa;
 	
+	@PesquisaTextual
 	@SerializedName("COMPLEMENTO")
 	private String complemento;
 
+	@PesquisaTextual
 	@SerializedName("COMPLEMENTO_EMPRESA")
 	private String complementoEmpresa;
 
+	@PesquisaTextual
 	@SerializedName("BAIRRO")
 	private String bairro;
 
+	@PesquisaTextual
 	@SerializedName("BAIRRO_EMPRESA")
 	private String bairroEmpresa;
 
+	@PesquisaTextual
 	@SerializedName("CIDADE")
 	private String cidade;
 
+	@PesquisaTextual
 	@SerializedName("CIDADE_EMPRESA")
 	private String cidadeEmpresa;
 
+	@PesquisaTextual
 	@SerializedName("ID_UF")
 	private String idUf;
 
+	@PesquisaTextual
 	@SerializedName("ID_UF_EMPRESA")
 	private String idUfEmpresa;
 
+	@PesquisaTextual
 	@SerializedName("NOME_UF")
 	private String nomeUf;
 
+	@PesquisaTextual
 	@SerializedName("NOME_UF_EMPRESA")
 	private String nomeUfEmpresa;
 
+	@PesquisaTextual
 	@SerializedName("CEP")
 	private String cep;
 
+	@PesquisaTextual
 	@SerializedName("CEP_EMPRESA")
 	private String cepEmpresa;
 

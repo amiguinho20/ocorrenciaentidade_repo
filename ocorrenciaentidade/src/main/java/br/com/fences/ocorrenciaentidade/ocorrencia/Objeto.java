@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 public class Objeto implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -14,42 +16,51 @@ public class Objeto implements Serializable {
 	@SerializedName("ID_MODO_OBJETO")
 	private String idModoObjeto;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_MODO_OBJETO")
 	private String descrModoObjeto;
 
 	@SerializedName("ID_TIPO_OBJETO")
 	private String idTipoObjeto;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_TIPO_OBJETO")
 	private String descrTipoObjeto;
 
 	@SerializedName("ID_SUBTIPO_OBJETO")
 	private String idSubtipoObjeto;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_SUBTIPO_OBJETO")
 	private String descrSubtipoObjeto;
 
 	@SerializedName("ID_UNIDADE")
 	private String idUnidade;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_UNIDADE")
 	private String descrUnidade;
 
 	@SerializedName("QUANTIDADE_OBJETO")
 	private String quantidadeObjeto;
 
+	@PesquisaTextual
 	@SerializedName("SERIE_OBJETO")
 	private String serieObjeto;
 
+	@PesquisaTextual
 	@SerializedName("MARCA_OBJETO")
 	private String marcaObjeto;
 
+	@PesquisaTextual
 	@SerializedName("OBSERVACAO_OBJETO")
 	private String observacaoObjeto;
 
+	@PesquisaTextual
 	@SerializedName("IMEI")
 	private String imei;
 
+	@PesquisaTextual
 	@SerializedName("SERIAL")
 	private String serial;
 

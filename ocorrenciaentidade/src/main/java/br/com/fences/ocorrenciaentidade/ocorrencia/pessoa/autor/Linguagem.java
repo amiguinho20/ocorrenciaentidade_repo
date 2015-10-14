@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 public class Linguagem implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -11,42 +13,49 @@ public class Linguagem implements Serializable {
 	@SerializedName("ID_ACENTO_LINGUAGEM")
 	private String idAcentoLinguagem;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_ACENTO_LINGUAGEM")
 	private String descrAcentoLinguagem;
 
 	@SerializedName("ID_DISTORCAO_LINGUAGEM")
 	private String idDistorcaoLinguagem;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_DISTORCAO_LINGUAGEM")
 	private String descrDistorcaoLinguagem;
 
 	@SerializedName("ID_FRASEOLOGIA_LINGUAGEM")
 	private String idFraseologiaLinguagem;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_FRASEOLOGIA_LINGUAGEM")
 	private String descrFraseologiaLinguagem;
 
 	@SerializedName("ID_RESSONANCIA_LINGUAGEM")
 	private String idRessonanciaLinguagem;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_RESSONACIA_LINGUAGEM")
 	private String descrRessonaciaLinguagem;
 
 	@SerializedName("ID_VELOCIDADE_LINGUAGEM")
 	private String idVelocidadeLinguagem;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_VELOCIDADE_LINGUAGEM")
 	private String descrVelocidadeLinguagem;
 
 	@SerializedName("ID_VOLUME_LINGUAGEM")
 	private String idVolumeLinguagem;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_VOLUME_LINGUAGEM")
 	private String descrVolumeLinguagem;
 
 	@SerializedName("ID_VOZ_LINGUAGEM")
 	private String idVozLinguagem;
 
+	@PesquisaTextual
 	@SerializedName("DESCR_VOZ_LINGUAGEM")
 	private String descrVozLinguagem;
 

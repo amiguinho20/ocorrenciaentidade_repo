@@ -4,14 +4,18 @@ import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
+import br.com.fences.ocorrenciaentidade.ocorrencia.anotacao.PesquisaTextual;
+
 
 public class CartaoCredito  implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
+	@PesquisaTextual
 	@SerializedName("NOME_CARTAO")
 	private String nomeCartao;
 	
+	@PesquisaTextual
 	@SerializedName("NUMERO_CARTAO")
 	private String numeroCartao;
 
